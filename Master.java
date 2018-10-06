@@ -10,13 +10,13 @@ import javax.swing.JOptionPane;
 public class Master extends Song 
 {
 	static  List<Song>  listSong=new ArrayList<Song>();
-	public Master()//¹¹Ôìº¯Êı
+	public Master()//æ„é€ å‡½æ•°
 	{
 	}
-	public boolean play()//²¥·Å¸èÇú
+	public boolean play()//æ’­æ”¾æ­Œæ›²
 	{
-		System.out.println("¸èµ¥£º"+"\n"+listSong.toString());
-		System.out.println("ÇëÑ¡Ôñ\n1£º°´Ë³Ğò²¥·Å\n2:Ñ¡Ôñ¸èÇú\n3:·µ»ØÉÏÒ»¼¶");
+		System.out.println("æ­Œå•ï¼š"+"\n"+listSong.toString());
+		System.out.println("è¯·é€‰æ‹©\n1ï¼šæŒ‰é¡ºåºæ’­æ”¾\n2:é€‰æ‹©æ­Œæ›²\n3:è¿”å›ä¸Šä¸€çº§");
 		try{
 			Scanner sc=new Scanner(System.in);
 			int in=sc.nextInt();
@@ -24,8 +24,8 @@ public class Master extends Song
 				System.out.println(listSong);
 			else if(in==2)
 			{
-				System.out.println("ÇëÊäÈëÒª²¥·ÅµÄ¸èÇúÃû³Æ£º");
-				int j=0;
+				System.out.println("è¯·è¾“å…¥è¦æ’­æ”¾çš„æ­Œæ›²åç§°ï¼š");
+				int j=0;		//ä½œä¸ºåˆ¤æ–­æ˜¯å¦æ‰¾åˆ°æ­Œæ›²çš„æ ‡å¿—
 				while(j==0)
 				{
 				Scanner s=new Scanner(System.in);
@@ -40,18 +40,18 @@ public class Master extends Song
 					}
 				}
 				if(j==0)
-					System.out.println("Î´ÕÒµ½¸Ã¸èÇú£¬ÇëÖØĞÂÊäÈë£º");
+					System.out.println("æœªæ‰¾åˆ°è¯¥æ­Œæ›²ï¼Œè¯·é‡æ–°è¾“å…¥ï¼š");
 				}
 			}
-			else if(in==3)		//·µ»Ø
+			else if(in==3)		//è¿”å›
 			{}
 		}
 		catch(Exception e)
 		{
-			System.out.printf("ÇëÖØĞÂÊäÈë£ºn1£º°´Ë³Ğò²¥·Å\\n2:Ñ¡Ôñ¸èÇú\\n3:·µ»ØÉÏÒ»¼¶",e.getMessage());
-//			JOptionPane.showMessageDialog(null, "ÇëÑ¡Ôñ\n1£º°´Ë³Ğò²¥·Å\n2:Ñ¡Ôñ¸èÇú\n3:·µ»ØÉÏÒ»¼¶");
+			System.out.printf("è¯·é‡æ–°è¾“å…¥ï¼šn1ï¼šæŒ‰é¡ºåºæ’­æ”¾\\n2:é€‰æ‹©æ­Œæ›²\\n3:è¿”å›ä¸Šä¸€çº§",e.getMessage());
+//			JOptionPane.showMessageDialog(null, "è¯·é€‰æ‹©\n1ï¼šæŒ‰é¡ºåºæ’­æ”¾\n2:é€‰æ‹©æ­Œæ›²\n3:è¿”å›ä¸Šä¸€çº§");
 		}
-		System.out.println("ÇëÑ¡Ôñ£ºÌí¼Ó¸èÇú:add,²¥·Å»ò²é¿´£ºplay,½áÊø:end");
+		System.out.println("è¯·é€‰æ‹©ï¼šæ·»åŠ æ­Œæ›²:add,æ’­æ”¾æˆ–æŸ¥çœ‹ï¼šplay,ç»“æŸ:end");
 		return true;
 	}
 }
